@@ -21,7 +21,7 @@ public class Quad {
   //Check if the current quadrant contains a point
   //top and right borders belong to current Quad
   public boolean contains(double x, double y) {
-    if (x<=this.xmid+this.length/2.0 && x>this.xmid-this.length/2.0 && y<=this.ymid+this.length/2.0 && y>this.ymid-this.length/2.0) {
+    if (x<=this.xmid+this.length/2.0 && x>=this.xmid-this.length/2.0 && y<=this.ymid+this.length/2.0 && y>=this.ymid-this.length/2.0) {
 	  return true;
     }
     else	return false;

@@ -45,7 +45,7 @@ public class Body {
     // add to the net force acting on the invoking Body
     public void addForce(Body b) {
         Body a = this;
-        double EPS = 0;      // softening parameter
+        double EPS = 1;      // softening parameter
         double dx = b.rx - a.rx;
         double dy = b.ry - a.ry;
         double dist = Math.sqrt(dx*dx + dy*dy);
